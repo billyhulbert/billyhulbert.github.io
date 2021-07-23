@@ -1,0 +1,149 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Gentium Book Basic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/gentiumbookbasic.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	font-display: swap;
+	src: url(fonts/inconsolata.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+html {
+    background: #1c223d;
+    color: rgba(0, 0, 0, 87%);
+    width: 100%;
+    min-width: 100vw;
+    text-rendering: optimizeLegibility;
+	font-family: "Gentium Book Basic", serif;
+	font-size: 20px;
+}
+
+body {
+    max-width: 944px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+body>header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em 0;
+}
+
+header,
+h1,
+h2,
+h3,
+.sans {
+	font-family: 'Space Grotesk', Helvetica, sans-serif;
+}
+
+div {
+	margin: 16px auto 16px auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    color: #30363d;
+    height: 1px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+nav a {
+	margin-left: 1.5em;
+	letter-spacing: 0.07em;
+	font-size: .9rem;
+}
+
+.proj-title {
+	float: left;
+}
+
+.proj-link {
+	float: right;
+	text-decoration: none;
+}
+
+.proj-link:hover {
+	text-decoration: underline;
+}
+
+p {
+	line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+details {
+	line-height: 1.2;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+summary {
+	font-weight: bold;
+}
+
+emph {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#proj {
+	margin-left: 24px;
+}
+
+#proj p {
+	margin: 4px;
+}
+
+#proj-head {
+	margin-bottom: 15px;
+}
+
+#proj-details {
+	border: 2px solid #2C3560;
+	border-radius: 1.5px;
+	margin: 7.5px;
+}
+
+#proj-details p {
+	margin: 7.5px;
+}
+
+#main-contact {
+	margin-top: 5em;
+	text-align: center;
+}
+
+.fa {
+	font-size: 42px;
+	width: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+.fa:hover {
+	color: #2C3560;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Billy Hulbert | Personal Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main-root">
+            <div id="main-about">
+                <h1>About</h1>
+                <p>
+                    I am a mostly self-taught developer who is currently studying at <emph>The Open University</emph>.
+                </p>
+                <p>
+                    In my own spare time, I like to write code and break apart binaries to figure out how they work and more. A lot of my projects focus around the <emph>Xbox</emph> platform due to my curiosity with the <emph>operating system</emph> and my love for <emph>modding</emph> - even with video games.
+                </p>
+            </div>
+            <hr>
+            <div id="main-projects">
+                <h1>Projects</h1>
+                <div id="proj">
+                    <div id="proj-head">
+                        <h2 class="proj-title">XvddKeyslotUtil</h2>
+                        <a class="proj-link" href="https://github.com/billyhulbert/XvddKeyslotUtil">Go to project page</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <p>A command-line program to identify and extract key material for current installed games through the <emph>Xbox</emph> desktop app.</p>
+                    <details>
+                        <summary>Show details about the project</summary>
+                        <div id="proj-details">
+                            <p>
+                                This project was written after reverse engineering the <emph>XVDD.sys</emph> driver that is included in the <emph>GamingServices</emph> package for Windows 10. The original goal was to be able to modify <emph>Halo: The Master Chief Collection</emph> but due to the nature of 
+                                MSIXVC packages; accessing game data is not possible without decrypting and extracting the data. 
+                                Therefore, I created a memory dump of a virtual machine and captured the license information belonging to the title. 
+                                This lead to the discovery of a <emph>Key Slot</emph> table belonging in the XVDD memory region. 
+                                Utilising <emph>Kernel-Bridge</emph>, I was able to seamlessly iterate and locate key data in the kernel memory region through the command line.
+                            </p>
+                        </div>
+                    </details>
+                    <hr>
+                </div>
+                <div id="proj">
+                    <div id="proj-head">
+                        <h2 class="proj-title">vbiparse</h2>
+                        <a class="proj-link" href="https://github.com/billyhulbert/vbiparse">Go to project page</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <p>Python script to parse an unknown file format belonging to the Xbox platform.</p>
+                    <details>
+                        <summary>Show details about the project</summary>
+                        <div id="proj-details">
+                            <p>
+                                A small script written to parse and extract the individual <emph>Windows PE</emph> files within the <emph>VBI</emph>> binary. This file was located in the user-data section of an operating system XVD on the Xbox One console.
+                                Further analysis revealed that this binary contained <emph>critical boot</emph> components: such as the kernel and other important drivers found on Windows.
+                            </p>
+                        </div>
+                    </details>
+                    <hr>
+                </div>
+                <br>
+            </div>
+            <hr>
+            <div id="main-contact">
+                <a class="fa fa-at" href="mailto:bhulbert@protonmail.com"></a>
+                <a class="fa fa-twitter" href="https://twitter.com/bllyhlbrt"></a>
+                <a class="fa fa-github" href="https://github.com/billyhulbert"></a>
+                <a class="fa fa-linkedin" href="https://linkedin.com/billyhulbert"></a>
+            </div>
+        </div>
+    </body>
+</html>
