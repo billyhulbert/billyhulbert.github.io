@@ -26,7 +26,7 @@
 
 html {
     background: #1c223d;
-    color: rgba(0, 0, 0, 87%);
+    color: rgba(210, 210, 210, 87%);
     width: 100%;
     min-width: 100vw;
     text-rendering: optimizeLegibility;
@@ -67,7 +67,7 @@ hr {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 2em;
 }
 
 nav a {
@@ -81,6 +81,7 @@ nav a {
 }
 
 .proj-link {
+	color: rgb(0, 153, 255);
 	float: right;
 	text-decoration: none;
 }
